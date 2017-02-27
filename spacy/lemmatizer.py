@@ -38,6 +38,10 @@ class Lemmatizer(object):
         self.rules = rules
 
     def __call__(self, string, univ_pos, morphology=None):
+        print(">>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+        print(string, type(string))
+        print(univ_pos, type(univ_pos))
+        print(morphology, type(morphology))
         if univ_pos == NOUN:
             univ_pos = 'noun'
         elif univ_pos == VERB:
